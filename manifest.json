@@ -22,11 +22,12 @@
    "manifest_version": 3,
    "minimum_chrome_version": "40.0",
    "name": "ESigner.Chrome.TCT",
-   "permissions": [ "contextMenus", "tabs", "nativeMessaging", "\u003Call_urls>" ],
+   "permissions": [ "contextMenus", "tabs", "nativeMessaging" ],
+   "host_permissions": [ "*://*.thuedientu.gdt.gov.vn/" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0.8",
    "web_accessible_resources": [{
       "resources": [ "page.js", "checkPlugin.js" ],
-      "matches": ["<all_urls>"]
+      "matches": [ "*://*.thuedientu.gdt.gov.vn/*" ]
    }]
 }
